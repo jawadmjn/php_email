@@ -100,11 +100,7 @@ function get_client_ip() {
  */
 $reference = date("is") . rand(1, 500);
 
-/**
- * If cookie for message_sent is not set, than set cookie for 1 hour and send the message.
- * This is for avoiding sending SMS and email again and again from the same user,
- * because sending SMS cost Money to us.
- */
+/* Email Body */
 $body = "Details of Error";
 $originator = "location of error";
 
